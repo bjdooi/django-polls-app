@@ -1,0 +1,22 @@
+{
+  "name": "My polls app",
+  "description": "It's kinda offensive",
+  "image": "heroku/python",
+  "repository": "https://github.com/bjdooi/django-polls-app/tree/heroku_deploy",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "The secret key for the Django application.",
+      "generator": "secret"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}
