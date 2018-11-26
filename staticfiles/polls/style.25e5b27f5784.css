@@ -1,0 +1,19 @@
+li a {
+    color: gold;
+    font-size: xx-large;
+    font-weight: bolder
+}
+
+h1 {
+    color: gold;
+    /* font-size: xx-large;
+    font-weight: bolder */
+}
+
+body {
+    background: 
+        url("images/Webp.net-gifmaker.c49a06662348.gif") center no-repeat,
+        url("images/background.e00ff49b17da.gif") left top repeat;
+    background-size: 700px, 300px;
+    padding: 15px;
+}
